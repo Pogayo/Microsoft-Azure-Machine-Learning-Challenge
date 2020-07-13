@@ -17,10 +17,10 @@ Machine learning allows computers to learn automatically based on observation or
 ML is best suited for applications such as pattern recognition, anomaly detection. time series forecasting, and recommendation systems
 
 ## Q and A
-1. What type of approach is shown in this image?
+1. What type of approach is shown in this image?(Image of rules and data as input and answers as output)
 - [x] Traditional programming
 - [ ] Machine Learning
-2.  What type of approach is shown in this image?
+2.  What type of approach is shown in this image?(Image of answers and data as input and rules as output)
 - [ ] Traditional programming
 - [x] Machine Learning
 3. Imagine you want to create a function that multiplies two numbers together (e.g., given the inputs 2 and 3, the function will generate the output 6). What approach is best suited to this problem?
@@ -34,6 +34,6 @@ ML is best suited for applications such as pattern recognition, anomaly detectio
 5. In traditional programming, the inputs of hard-coded rules and data are used to arrive at the output of answers, but in machine learning the approach is quite different. Mark all of the options below that are true statements about machine learning.
 
 - [x] Data is an input to train an algorithm
-- [x] Historical answers are an input to train an algorith
+- [x] Historical answers are an input to train an algorithm
 - [ ] Rules are explicitly programmed
 - [x] Rules are the output learned by the algorithm
