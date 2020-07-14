@@ -12,7 +12,7 @@ NLP can be used to summarize texts, power search, automatically detect topics, i
 With regards to speech, NLP powers applications such as speech to text which converts human speech to text and vice versa.
 
 ML also powers computer vision applications such as self-driving cars, describing the contents of an image(Object detection), locating specific objects within an image(Object Identification).
-Computer Viision can do this with images created with visible image spectrum as well as other image types such as LIDAR that are collected using laser scanners. 
+Computer Vision can do this with images created with visible image spectrum as well as other image types such as LIDAR that are collected using laser scanners. 
 
 ML powers analytics applications that help make prediction performing tasks such as regression, classification, forecasting and clustering.
 
