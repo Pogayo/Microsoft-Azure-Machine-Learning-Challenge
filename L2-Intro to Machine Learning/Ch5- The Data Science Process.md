@@ -1,6 +1,6 @@
 **Lesson 2: Intro to Machine Learning**
 
-# Chapter 4 - The Data Science Process
+# Chapter 5 - The Data Science Process
 
 ## Data collection 
 **Developer Activities:** Writing code to retrieve files, querying databases, calling web-services, or scraping web pages
@@ -20,7 +20,6 @@
 **Developer Activities:** Writing code to test the performance and do some math
 ## Deploy the model 
 Deploy as a webservice or API
-
 **Developer Activities:** Scripts for maintaining and monitoring, DevOps activities
 ## Retrain the model
 On fresh data
