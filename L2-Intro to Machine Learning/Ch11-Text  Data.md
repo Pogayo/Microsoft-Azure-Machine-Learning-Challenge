@@ -1,32 +1,44 @@
 **Lesson 2: Intro to Machine Learning**
 
-# Chapter 6 - Common Types of Data
-> Details of the type of data is important because the form and structure of the data fed into the machine learning algorithm  regarding:
->Choice of algorithms, value of hyperparameters and approaches to solve various problems.
-## Numerical Data
-Either integers or floats eg house prices
-> All data fed into an algorithm ends up numeric despite its original form.
+# Chapter 11 - Text Data
+*Tokenizing* text is spliting each string of text into a list of smaller parts or tokens
+## Normalization
 
-## Time Series
-Series of numerical values that can be ordered, typically data collected over equally spaced points in time.
-Can also be data ordered based on a non-datetime column.
+> Text normalization is the process of transforming a piece of text into a canonical (official) form.
 
-**Examples:** Energy demand, realtime stocks performance
-
-Complex cases such as speech data that gets transformed into time-based fequency values
+### Lemmatization
+A lemma is the dictionary form of a word and lemmatization is the process of reducing multiple inflections to that single dictionary form.
 
 
-## Categorical Data
-Discrete and limited set of values
+**Examples:** 
 
+Original word |	Lemmatized word
+---------|----------
+is | be
+are|	be
+am	| be
+## Stop words removal
+>  Stop words are high-frequency words that are unnecessary (or unwanted) during the analysis. 
+
+**Examples:** 
+
+Original text|  Normalized text
+---------|----------
+The quick fox.	| [quick, fox]
+The lazzy dog.	| [lazy, dog]
+The rabid hare.| 	[rabid, hare]
 Most have small cardinality eg Gender. Some have high eg Location ID
 
-## Text
-Includes words, sentences eg news articles
+## Vectorization
+After normalization, the next step is usually vectorization- encoding it into a numerical form.
+### Common approaches
+* Term Frequency-Inverse Document Frequency (TF-IDF) vectorization: Assigns weights to words that signify their relevance in the documents.
+* Word embedding, as done with Word2vec or Global Vectors (GloVe)
 
-**Challenge:** Transforming it into a numeric form appropriate for an ML algorithm is challenging.
+## Feature Extraction
 
-## Images
-Pictures, snapshots or full- streams of videos.
-
-Not initially in numerical form but they will need to be transformed into RGB values, a set of numerical values ranging from 0 to 255, to be processed.
+## The whole pipeline
+1. Normalize
+2. Vectorize and Extract Features
+3. Train model
+4. Deploy model
