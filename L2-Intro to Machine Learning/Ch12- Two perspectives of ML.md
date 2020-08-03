@@ -1,19 +1,34 @@
 **Lesson 2: Intro to Machine Learning**
 
-# Chapter 4 - Brief History of Machine Learning
+# Chapter 12- Two Perspectives in ML
 
-- As AI was emerging in the 50's, there was a perception that computers will be smarter than humans by the 2000's.
-It  soon was realised that limitations of computing power and algorithms were so serious that it would take longer.
-- In the 80's there was a shift to specific areas of AI- Machine Learning being one of them.
-One of the machine learning algorithms being designed and developed was neural nets-inspired by the human brain
-- In 2010's the availability of superior computing power in the form of GPU's revived research in neural nets
-The term *deep learning* was coined because the neural nets were large and had many hidden layers.
+>Computer Science - We are using input features to create a program that can generate the desired output.
 
-DESCRIPTION | TERM
----------|----------
-A broad term that refers to computers thinking more like humans.| Artificial Intelligence
-A subcategory of artificial intelligence that involves learning from data without being explicitly programmed.| Machine Learning
-A subcategory of machine learning that uses a layered neural-network architecture originally inspired by the human brain.| Deep Learning
+>Statisical - We are trying to find a mathematical function that, given the values of the independent variables can predict the values of the dependent variables.
 
-## Further Reading
-[What’s the Difference Between Artificial Intelligence, Machine Learning and Deep Learning? by Michael Copeland at NVIDIA](https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/)
+
+## Computer Science Perspective
+
+A row is callled an **entity** or an **observation** about an entity or  **instance**, in the sense that a row may be considered a single example (or instance) of data.
+
+A column might be referred to as a **feature** or **attribute** which describes the property of an entity.
+
+When there are multiple input variables, the row can be described as  **input vector**
+
+## Statistical Perspective
+
+In statistics, you'll the data is described in terms of independent variables and dependent variables.
+
+From a statistical perspective, the machine learning algorithm is trying to learn a hypothetical function (f) such that:
+
+>Output Variable = f(Input Variables)
+>
+Typically, the independent variables are the input, and the dependent variables are the output. Thus, the above formula can also be expressed as:
+
+>Dependent Variable = f(Independent Variables)
+
+In shorthand notation
+>Y = f(X)
+
+In the case of multiple input variables, X would be an **input vector**, meaning that it would be composed of multiple individual inputs (e.g. (908721, Guess, Blue, 789, 45.33)). In this case, the individual inputs are denoted with a subscript, as in X1, X2, X3 etc.
+
