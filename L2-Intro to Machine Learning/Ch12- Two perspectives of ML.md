@@ -7,7 +7,7 @@
 >Statisical - We are trying to find a mathematical function that, given the values of the independent variables can predict the values of the dependent variables.
 
 
-## Computer Science Perspective
+# Chapter 13- Computer Science Perspective
 
 A row is callled an **entity** or an **observation** about an entity or  **instance**, in the sense that a row may be considered a single example (or instance) of data.
 
@@ -15,7 +15,7 @@ A column might be referred to as a **feature** or **attribute** which describes 
 
 When there are multiple input variables, the row can be described as  **input vector**
 
-## Statistical Perspective
+# Chapter 14- Statistical Perspective
 
 In statistics, you'll the data is described in terms of independent variables and dependent variables.
 
