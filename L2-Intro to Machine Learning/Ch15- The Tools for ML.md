@@ -46,7 +46,7 @@ To deploy models, you can use:
 - **Seaborn** is a Python library based on matplotlib, but provides a more high-level interface and has additional features for making visualizations more attractive and informative.
 - **Bokeh** is an interactive data visualization library that generates visualizations in HTML and JavaScript. This allows for web-based visualizations that can have interactive features.
 
-# Chapter 16- Cloud Services
+# Chapter 17- Cloud Services
 
 A typical cloud service for machine learning provides support for managing the core assets involved in machine learning projects.
 ## Core Asset Management
