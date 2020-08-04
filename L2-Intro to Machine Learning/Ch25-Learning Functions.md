@@ -20,3 +20,19 @@ Irreducible error | Model error
 ------------ | ------------
 Caused by the data collection process—such as when we don't have enough data or don't have enough data features. | Is generated from the model
 Cannot be reduced | Can be reduced during the model learning process.
+
+# Chapter 26 - Parametric and Non-parametric Algorithms
+
+ML algorithms can be divided into two **parametric** and **nonparametric** based on the assumptions about the *shape* and *structure* of the function they try to learn.
+
+Parametric | Non-parametric
+------------ | ------------
+Make assumptions about the mapping function and have a fixed number of parameters.  | Do not make assumptions regarding the form of the mapping function.
+We are selecting the form of the function and then learning its coefficients using the training data.  |  They are free to learn any functional form from the training data.
+Simpler and easier to understand; easier to interpret the results  |Overfitting the training data is a risk; overfitting makes it harder to explain the resulting predictions
+Faster when talking about learning from data | Slower to train
+Less training data required to learn the mapping function, working well even if the fit to data is not perfect | More training data is required
+Highly constrained to the specified form of the simplified function | High flexibility- they are capable of fitting a large number of functional forms
+Limited complexity of the problems they are suitable for | Power by making weak or no assumptions on the underlying function
+Poor fit in practice, unlikely to match the underlying mapping function. | High performance
+Logistic regression, Linear regression | Decision trees, KNN
