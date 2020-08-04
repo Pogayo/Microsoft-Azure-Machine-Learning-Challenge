@@ -36,3 +36,16 @@ Highly constrained to the specified form of the simplified function | High flexi
 Limited complexity of the problems they are suitable for | Power by making weak or no assumptions on the underlying function
 Poor fit in practice, unlikely to match the underlying mapping function. | High performance
 Logistic regression, Linear regression | Decision trees, KNN
+
+# Chapter 27 - Classical ML vs Deep Learning
+>Deep learning is a subset of machine learning
+>
+Classical ML algorithms | Deep Learning algorithms 
+------------ | ------------
+Based on classical mathematical algorithms, such as linear regression, logistic regression, decision tree, SVM | Based on neural networks
+More suitable for small data | Better support for big data
+Easier to interpret outcomes |  Difficult to explain outcomes| 
+Does not require large computational power, cheaper to perform, can run on low-end machines  | Require significant computational power
+Difficult to learn large datasets | Complex features can be learned
+Require feature engineering | Better accuracy, compared to classical ML
+Difficult to learn complex functions | Suitable for high complexity problems
