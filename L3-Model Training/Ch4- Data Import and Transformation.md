@@ -1,54 +1,36 @@
-**Lesson 2: Intro to Machine Learning**
+**Lesson 3:Model Training**
 
-# Chapter 28 - Approaches to Machine Learning
-
-There are three main approaches to machine learning:
+# Chapter 4 - Data Import and Transformation
 
 
-## 1. Supervised learning
-Learns from data that contains both the inputs and expected outputs (e.g., labeled data). Common types are:
-
-- Classification: Outputs are categorical.
-- Regression: Outputs are continuous and numerical.
-- Similarity learning: Learns from examples using a similarity function that measures how similar two objects are.
-- Feature learning: Learns to automatically discover the representations or features from raw data.
-- Anomaly detection: A special form of classification, which learns from data labeled as normal/abnormal.
-## 2. Unsupervised learning
-Learns from input data only; finds hidden structure in input data.
-
-- Clustering: Assigns entities to clusters or groups.
-- Feature learning: Features are learned from unlabeled data.
-- Anomaly detection: Learns from unlabeled data, using the assumption that the majority of entities are normal.
-## 3.Reinforcement learning
-Learns how an agent should take action in an environment in order to maximize a reward function.
- >Reinforcement learning is an active process where the actions of the agent influence the data observed in the future, hence influencing its own potential future states. In contrast, supervised and unsupervised learning approaches are passive processes where learning is performed without any actions that could influence the data.
+**Data wrangling** is the process of cleaning and transforming data to make it more appropriate for data analysis. 
+- Explore the raw data and check the general quality of the dataset.
+- Transform the raw data, by restructuring, normalizing, and cleaning the data. For example, this could involve handling missing values and detecting errors.
+- Validate and publish the data.
 
 
-# Chapter 29 - The Trade-Offs
 
-## Bias vs. Variance
->Bias measures how inaccurate the model prediction is in comparison with the true output. It is due to erroneous assumptions made in the machine learning process to simplify the model and make the target function easier to learn. High model complexity tends to have a low bias.
+>Data wrangling is an iterative process where you do some data transformation then check the results and come back to the process to make improvements.
 
->Variance measures how much the target function will change if different training data is used. Variance can be caused by modeling the random noise in the training data. High model complexity tends to have a high variance.
 
-As a general trend, parametric and linear algorithms often have high bias and low variance, whereas non-parametric and non-linear algorithms often have low bias and high variance
+# Chapter 7 -Managing Data 
+Datastore in Azure Machine Learning is a layer of abstraction that provides an isolation from the various supported data storages in Azure.
 
-> prediction error = Bias error + variance + error + irreducible error
+Datasets are resources for exploring, transforming, and managing data in Azure ML. A dataset is essentially a reference that points to the data in storage. 
 
-Bias error + variance - Model error
+Datastore | Dataset
+-------- | --------
+Answers the question, "how do I securely connect to the data in my Azure storage?"| Answers the question, "how do I get access to specific data files?"
+Keeps connection information internal, so it is not exposed in scripts.| Points to specific files in your underlying storage that you want to use in your ML experiments.
 
-irreducible error- Data collection error
->The goal of training machine learning models is to achieve low bias and low variance. The optimal model complexity is where bias error crosses with variance error.
+## The Data Access Workflow
 
-## Overfitting vs. Underfitting
-Overfitting refers to the situation in which models fit the training data very well, but fail to generalize to new data.
+The steps of the data access workflow are:
 
-Underfitting refers to the situation in which models neither fit the training data nor generalize to new data.
+1. Create a datastore so that you can access storage services in Azure.
+2. Create a dataset, which you will subsequently use for model training in your machine learning experiment.
+3. Create a dataset monitor to detect issues in the data, such as data drift.
 
-### How to reduce overfitting
-- k-fold cross-validation: it split the initial training data into k subsets and train the model k times. In each training, it uses one subset as the testing data and the rest as training data.
-- hold back a validation dataset from the initial training data to estimatete how well the model generalizes on new data.
-- simplify the model. For example, using fewer layers or less neurons to make the neural network smaller.
-- use more data.
-- reduce dimensionality in training data such as PCA: it projects training data into a smaller dimension to decrease the model complexity.
-- Stop the training early when the performance on the testing dataset has not improved after a number of training iterations.
+Data Drift - The situation where the input data that you are feeding into your model changes overtime. It can be problematic for model accuracy. 
+
+You can set up dataset monitors to detect data drift and other issues in your data. When data drift is detected, you can have the system automatically update the input dataset so that you can retrain the model and maintain its accuracy.
