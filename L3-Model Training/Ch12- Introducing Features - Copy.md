@@ -36,3 +36,21 @@ Common approaches for text are:
 - Word embedding
 
 Not much engineering is required for image data as the features are learned naturally in the case of neural networks.
+
+
+# Chapter 15 - Feature Selection
+
+Reasons
+- To eliminate redundant or highly correlated features
+- To reduce dimensionality hence increase performance
+
+## Commonly used dimensionality reduction techniques 
+
+- PCA (Principal Component Analysis)
+- t-SNE (t-Distributed Stochastic Neighboring Entities)
+- Feature embedding
+
+## Azure ML prebuilt feature selection modules:
+
+- Filter-based feature selection: identify columns in the input dataset that have the greatest predictive power
+- Permutation feature importance: determine the best features to use by computing the feature importance scores
