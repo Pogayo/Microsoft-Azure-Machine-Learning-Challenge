@@ -40,7 +40,7 @@ Multi--class Decision Forest | Accurate, fast training times
 Multi--class Logistic regression| Fast training times, linear model
 Multi--class  Boosted Decision Tree|Non-parametricFast training, scalable
 Multi--class neural network| Accurate, long training times
-One-vs- All Multi-class Depends on the underlying two-class classifier
+[One-vs- All Multi-class](https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/one-vs-all-multiclass) | Depends on the underlying two-class classifier
 
 # Chapter 7- Multi-class Algorithms
 
