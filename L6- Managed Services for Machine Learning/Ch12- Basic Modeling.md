@@ -96,3 +96,21 @@ Unlike real-time inferencing, which makes predictions on data as it is received,
     * Cold path-makes predictions in batch fashion, usually on a predefined schedule
 - Batch and real-time inferences are stored in the serving layer for reporting and auditing
 - Hot and cold path converge at the analytic client application
+
+#Chapter 21: Programatically accessing managed services
+AML provides a code-first experience via the Azure Machine Learning SDK for Python. Using the SDK, you can start training your models on your local machine and then scale out to use Azure Machine Learning compute resources. This allows you to train better performing, highly accurate machine learning models.
+
+Azure Machine Learning service supports many of the popular open-source machine learning and deep learning Python packages that we discussed earlier in the course, such as:
+
+- Scikit-learn
+- Tensorflow
+- PyTorch
+- Keras
+
+AML SDK
+- Manage datasets
+- Organize and monitor experiments
+- Model training
+- Automated ML
+- Model deployment
+- 
